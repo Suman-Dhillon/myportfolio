@@ -31,3 +31,29 @@ body {
     text-wrap: balance;
   }
 }
+
+#particles {
+  background: #1a222c;
+  display: flex;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header .name-title {
+  font-size: 50px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+}
+
+.header .description {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  margin-top: 10px;
+}
