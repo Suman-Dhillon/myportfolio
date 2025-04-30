@@ -11,9 +11,8 @@ const About = () => {
         <p className="about-intro">
           Hi, I&rsquo;m Sumandeep Kaur, a passionate and driven software
           developer with a focus on web development and IT support. I enjoy
-          building creative and efficient solutions to real-world problems. Let's go babyyyyyyy
+          building creative and efficient solutions to real-world problems.
         </p>
-
         <div className="about-content">
           <div className="about-details">
             <h2>My Skills</h2>
@@ -42,8 +41,8 @@ const About = () => {
             working with technology, feel free to reach out. I am always open to
             exciting opportunities!
           </p>
-          <a href="mailto:youremail@example.com" className="contact-button">
-            Contact Me
+          <a href="mailto:sumandeepdkaur@gmail.com" className="contact-button">
+            Contact Me Now
           </a>
         </div>
       </div>
