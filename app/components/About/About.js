@@ -11,7 +11,7 @@ const About = () => {
         <p className="about-intro">
           Hi, I&rsquo;m Sumandeep Kaur, a passionate and driven software
           developer with a focus on web development and IT support. I enjoy
-          building creative and efficient solutions to real-world problems.
+          building creative and efficient solutions to real-world problems. Let's go babyyyyyyy
         </p>
 
         <div className="about-content">
