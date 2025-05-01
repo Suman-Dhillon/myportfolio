@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./Skills.css";
+import "./skills.css";
 import {
   SiJavascript,
   SiTypescript,

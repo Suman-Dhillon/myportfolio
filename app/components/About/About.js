@@ -33,10 +33,10 @@ const About = () => {
         <div className="about-content">
           <div className="about-intro about-animate" style={{ animationDelay: '0.2s' }}>
             <h1 className="about-name">
-              Hi, I'm <span className="text-gradient">Sumandeep</span>.
+              Hi, I&apos;m <span className="text-gradient">Sumandeep</span>.
             </h1>
             <p className="about-description">
-              I'm a full-stack developer dedicated to turning ideas into creative solutions. 
+              I&apos;m a full-stack developer dedicated to turning ideas into creative solutions. 
               I specialize in creating seamless and intuitive user experiences.
             </p>
           </div>

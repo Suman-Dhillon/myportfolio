@@ -28,7 +28,7 @@ const Home = () => {
                         <p className="home-intro">
                             Hi there! 
                             <span> 👋🏻 </span>
-                            I'm Sumandeep
+                            I&apos;m Sumandeep
                         </p>
                         <p> 
                             A passionate and driven software developer with a focus on web development and designing. I enjoy building creative and efficient solutions to real-world problems.
