@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Navbar from "../Navbar/Navbar";
 import './home.css';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                         height: `${Math.random() * 3 + 1}px`
                     }} />
                 ))}
+
             <section className="home-section">
                 <div className="home-container">
                     <div className="home-content">
@@ -26,8 +28,10 @@ const Home = () => {
                         <p className="home-intro">
                             Hi there! 
                             <span> 👋🏻 </span>
-                            I'm Sumandeep. A creative Frontend Developer with experience in building 
-                            high-performance, scalable, and responsive web solutions.
+                            I'm Sumandeep
+                        </p>
+                        <p> 
+                            A passionate and driven software developer with a focus on web development and designing. I enjoy building creative and efficient solutions to real-world problems.
                         </p>
                     </div>
                     

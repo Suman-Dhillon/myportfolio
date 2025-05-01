@@ -1,49 +1,54 @@
-// About.js
-import React from "react";
-import "./About.css"; // Import CSS file for styling
+"use client";
+import React, { useEffect } from "react";
+import "./About.css";
 
 const About = () => {
+  useEffect(() => {
+    // Simple intersection observer for fade-in effects
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeIn');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about-animate').forEach(el => observer.observe(el));
+    
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="about-section">
-      <div className="container">
-        <h1 className="section-title">About Me</h1>
-
-        <p className="about-intro">
-          Hi, I&rsquo;m Sumandeep Kaur, a passionate and driven software
-          developer with a focus on web development and IT support. I enjoy
-          building creative and efficient solutions to real-world problems.
-        </p>
-        <div className="about-content">
-          <div className="about-details">
-            <h2>My Skills</h2>
-            <ul>
-              <li>Frontend: HTML, CSS, JavaScript, React.js</li>
-              <li>Backend: Node.js, MongoDB, MySQL</li>
-              <li>Version Control: Git, GitHub</li>
-              <li>UI/UX Design: Responsive Design, Figma</li>
-            </ul>
-          </div>
-
-          <div className="about-education">
-            <h2>Education</h2>
-            <p>Diploma in Software Development</p>
-            <p>Southern Alberta Institute of Technology (SAIT), 2024</p>
-            <p>
-              <strong>GPA:</strong> 3.89
-            </p>
-          </div>
+    <section className="about-section" id="about">
+      <div className="about-container">
+        <div className="about-header about-animate">
+          <h2 className="about-belief">
+            I believe in a <span className="highlight">user-centered</span> design approach, 
+            ensuring that every project I work on is tailored to meet specific user needs.
+          </h2>
+          <div className="about-divider"></div>
+          <p className="about-this-is-me">This is me.</p>
         </div>
 
-        <div className="call-to-action">
-          <h2>Let’s Work Together!</h2>
-          <p>
-            If you’re looking for a developer who is detail-oriented and loves
-            working with technology, feel free to reach out. I am always open to
-            exciting opportunities!
-          </p>
-          <a href="mailto:sumandeepdkaur@gmail.com" className="contact-button">
-            Contact Me Now
-          </a>
+        <div className="about-content">
+          <div className="about-intro about-animate" style={{ animationDelay: '0.2s' }}>
+            <h1 className="about-name">
+              Hi, I'm <span className="text-gradient">Sumandeep</span>.
+            </h1>
+            <p className="about-description">
+              I'm a full-stack developer dedicated to turning ideas into creative solutions. 
+              I specialize in creating seamless and intuitive user experiences.
+            </p>
+          </div>
+
+          <div className="about-approach about-animate" style={{ animationDelay: '0.4s' }}>
+            <p>
+              My approach focuses on creating <strong>scalable</strong>, <strong>high-performing</strong> solutions 
+              tailored to both user needs and business objectives. By prioritizing 
+              performance, accessibility, and responsiveness, I deliver experiences 
+              that engage users and drive tangible results.
+            </p>
+          </div>
         </div>
       </div>
     </section>

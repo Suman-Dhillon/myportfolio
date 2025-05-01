@@ -1,0 +1,138 @@
+.skills-section {
+    padding: 6rem 2rem;
+    background-color: rgba(49, 49, 49, 0.799);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .stack-category {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .tech-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-item:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+  }
+  
+  .tech-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .tech-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tech-acronym {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    text-transform: uppercase;
+  }
+  
+  .tech-fullname {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .stack-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stack-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stack-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .category-title {
+      font-size: 1.25rem;
+    }
+  }
+
+  .tech-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    /* Remove default color to allow inline style to work */
+  }
+  
+  .tech-item:hover .tech-logo {
+    transform: scale(1.15);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Specific icon colors as fallback */
+  .tech-logo .SiJavascript { color: #F7DF1E !important; }
+  .tech-logo .SiTypescript { color: #3178C6 !important; }
+  .tech-logo .SiReact { color: #61DAFB !important; }
+  .tech-logo .SiNextdotjs { color: #000000 !important; }
+  .tech-logo .SiRedux { color: #764ABC !important; }
+  .tech-logo .SiTailwindcss { color: #38B2AC !important; }
+  .tech-logo .SiGreensock { color: #88CE02 !important; }
+  .tech-logo .SiFramer { color: #0055FF !important; }
+  .tech-logo .SiSass { color: #CC6699 !important; }
+  .tech-logo .SiBootstrap { color: #7952B3 !important; }
+  .tech-logo .SiNodedotjs { color: #339933 !important; }
+  .tech-logo .SiNestjs { color: #E0234E !important; }
+  .tech-logo .SiExpress { color: #000000 !important; }
+  .tech-logo .SiMysql { color: #4479A1 !important; }

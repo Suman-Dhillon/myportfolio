@@ -1,58 +1,101 @@
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+/* Navbar Container */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Transparent Navbar */
+.transparent-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: rgba(15, 12, 41, 0.5); /* Semi-transparent dark blue */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Nav Stars */
+.nav-star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  animation: nav-star-fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes nav-star-fall {
+  0% {
+    transform: translateY(-100px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(50px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* Logo */
+.nav-logo a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #4fc3f7;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4fc3f7;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transparent-nav {
+    padding: 1rem;
+    flex-direction: column;
   }
   
-  .nav__logo-link {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+  .nav-links {
+    margin-top: 1rem;
+    gap: 1rem;
   }
-  
-  .nav__hamburger {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .nav__list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav__link {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .nav__list--active {
-    display: flex;
-  }
-  
-  /* Mobile styles */
-  @media (max-width: 768px) {
-    .nav__list {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      background-color: #444;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  
-    .nav__hamburger {
-      font-size: 1.2rem;
-    }
-  }
-  
+}

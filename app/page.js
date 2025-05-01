@@ -1,14 +1,18 @@
 import Link from "next/link";
 import Home from "./components/home/home";
-import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Navbar from "./components/Navbar/Navbar";
+import Skills from "./components/skills/skills";
+import Contact from "./components/contact/contact";
 
 export default function Page() {
   return (
     <>
       <Navbar />
       <Home />
-      <About />     
+      <About /> 
+      <Skills />
+      <Contact />    
     </>
   );
 }
