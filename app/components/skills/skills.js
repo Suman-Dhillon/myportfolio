@@ -8,14 +8,16 @@ import {
   SiNextdotjs,
   SiRedux,
   SiTailwindcss,
-  SiGreensock,
-  SiFramer,
-  SiSass,
   SiBootstrap,
   SiNodedotjs,
   SiNestjs,
   SiExpress,
-  SiMysql
+  SiMysql,
+  SiMongodb,
+  SiOracle,
+  SiGit,
+  SiFigma,
+  SiDocker
 } from "react-icons/si";
 
 const Skills = () => {
@@ -27,15 +29,7 @@ const Skills = () => {
     ],
     frontendTools: [
       { name: "Next.js", Icon: SiNextdotjs, acronym: "Next.Js", color: "#000000" },
-      { name: "Redux", Icon: SiRedux, acronym: "Redux", color: "#764ABC" },
-      { name: "Tailwind CSS", Icon: SiTailwindcss, acronym: "Tailwind CSS", color: "#38B2AC" }
-    ],
-    animation: [
-      { name: "GSAP", Icon: SiGreensock, acronym: "GSAP", color: "#88CE02" },
-      { name: "Framer Motion", Icon: SiFramer, acronym: "Framer Motion", color: "#0055FF" },
-      { name: "SASS", Icon: SiSass, acronym: "SASS", color: "#CC6699" }
-    ],
-    uiFrameworks: [
+      { name: "Tailwind CSS", Icon: SiTailwindcss, acronym: "Tailwind CSS", color: "#38B2AC" },
       { name: "Bootstrap", Icon: SiBootstrap, acronym: "Bootstrap", color: "#7952B3" }
     ],
     backend: [
@@ -44,7 +38,14 @@ const Skills = () => {
       { name: "Express", Icon: SiExpress, acronym: "Express.Js", color: "#000000" }
     ],
     database: [
-      { name: "MySQL", Icon: SiMysql, acronym: "MySQL", color: "#4479A1" }
+      { name: "MySQL", Icon: SiMysql, acronym: "MySQL", color: "#4479A1" },
+      { name: "MongoDB", Icon: SiMongodb, acronym: "MongoDB", color: "#47A248" },
+      { name: "Oracle", Icon: SiOracle, acronym: "Oracle", color: "#F80000" }
+    ],
+    tools: [
+      { name: "Git", Icon: SiGit, acronym: "Git", color: "#F05032" },
+      { name: "Figma", Icon: SiFigma, acronym: "Figma", color: "#F24E1E" },
+      { name: "Docker", Icon: SiDocker, acronym: "Docker", color: "#2496ED" }
     ]  
   };
 
@@ -74,26 +75,6 @@ const Skills = () => {
             </div>
           </div>
           
-          {/* Animation Column */}
-          <div className="stack-category">
-            <h2 className="category-title">&nbsp;</h2>
-            <div className="tech-items">
-              {techStack.animation.map((tech, index) => (
-                <TechItem key={index} tech={tech} />
-              ))}
-            </div>
-          </div>
-          
-          {/* UI Frameworks Column */}
-          <div className="stack-category">
-            <h2 className="category-title">&nbsp;</h2>
-            <div className="tech-items">
-              {techStack.uiFrameworks.map((tech, index) => (
-                <TechItem key={index} tech={tech} />
-              ))}
-            </div>
-          </div>
-          
           {/* Backend Column */}
           <div className="stack-category">
             <h2 className="category-title">BACKEND</h2>
@@ -109,6 +90,16 @@ const Skills = () => {
             <h2 className="category-title">DATABASE</h2>
             <div className="tech-items">
               {techStack.database.map((tech, index) => (
+                <TechItem key={index} tech={tech} />
+              ))}
+            </div>
+          </div>
+
+          {/* Tools Column */}
+          <div className="stack-category">
+            <h2 className="category-title">TOOLS</h2>
+            <div className="tech-items">
+              {techStack.tools.map((tech, index) => (
                 <TechItem key={index} tech={tech} />
               ))}
             </div>

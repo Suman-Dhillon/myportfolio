@@ -9,10 +9,11 @@
   }
   
   .section-title {
-    font-size: 3rem;
+    font-size:xx-large;
+    font-weight: bolder;
     text-align: center;
     margin-bottom: 4rem;
-    color: #1e293b;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -71,7 +72,7 @@
   .tech-acronym {
     font-size: 1rem;
     font-weight: 600;
-    color: #1e293b;
+    color: #ffffff;
     text-transform: uppercase;
   }
   
@@ -136,3 +137,43 @@
   .tech-logo .SiNestjs { color: #E0234E !important; }
   .tech-logo .SiExpress { color: #000000 !important; }
   .tech-logo .SiMysql { color: #4479A1 !important; }
+
+/* Update the grid layout for additional columns */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .stack-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Specific icon colors for new additions */
+.tech-logo .SiAngular { color: #DD0031 !important; }
+.tech-logo .SiVuedotjs { color: #4FC08D !important; }
+.tech-logo .SiPython { color: #3776AB !important; }
+.tech-logo .SiMongodb { color: #47A248 !important; }
+.tech-logo .SiOracle { color: #F80000 !important; }
+.tech-logo .SiJava { color: #007396 !important; }
+.tech-logo .SiCsharp { color: #239120 !important; }
+.tech-logo .SiCplusplus { color: #00599C !important; }
+.tech-logo .SiGit { color: #F05032 !important; }
+.tech-logo .SiFigma { color: #F24E1E !important; }
+.tech-logo .SiDocker { color: #2496ED !important; }
+.tech-logo .SiAmazonaws { color: #232F3E !important; }
