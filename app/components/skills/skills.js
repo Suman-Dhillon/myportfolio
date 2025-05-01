@@ -17,43 +17,83 @@ import {
   SiOracle,
   SiGit,
   SiFigma,
-  SiDocker
+  SiDocker,
 } from "react-icons/si";
 
 const Skills = () => {
   const techStack = {
     frontend: [
-      { name: "JavaScript", Icon: SiJavascript, acronym: "JS", color: "#F7DF1E" },
-      { name: "TypeScript", Icon: SiTypescript, acronym: "TS", color: "#3178C6" },
-      { name: "React", Icon: SiReact, acronym: "React", color: "#61DAFB" }
+      {
+        name: "JavaScript",
+        Icon: SiJavascript,
+        acronym: "JS",
+        color: "#F7DF1E",
+      },
+      {
+        name: "TypeScript",
+        Icon: SiTypescript,
+        acronym: "TS",
+        color: "#3178C6",
+      },
+      { name: "React", Icon: SiReact, acronym: "React", color: "#61DAFB" },
     ],
     frontendTools: [
-      { name: "Next.js", Icon: SiNextdotjs, acronym: "Next.Js", color: "#000000" },
-      { name: "Tailwind CSS", Icon: SiTailwindcss, acronym: "Tailwind CSS", color: "#38B2AC" },
-      { name: "Bootstrap", Icon: SiBootstrap, acronym: "Bootstrap", color: "#7952B3" }
+      {
+        name: "Next.js",
+        Icon: SiNextdotjs,
+        acronym: "Next.Js",
+        color: "#000000",
+      },
+      {
+        name: "Tailwind CSS",
+        Icon: SiTailwindcss,
+        acronym: "Tailwind CSS",
+        color: "#38B2AC",
+      },
+      {
+        name: "Bootstrap",
+        Icon: SiBootstrap,
+        acronym: "Bootstrap",
+        color: "#7952B3",
+      },
     ],
     backend: [
-      { name: "Node.js", Icon: SiNodedotjs, acronym: "Node.Js", color: "#339933" },
+      {
+        name: "Node.js",
+        Icon: SiNodedotjs,
+        acronym: "Node.Js",
+        color: "#339933",
+      },
       { name: "NestJS", Icon: SiNestjs, acronym: "Nest.Js", color: "#E0234E" },
-      { name: "Express", Icon: SiExpress, acronym: "Express.Js", color: "#000000" }
+      {
+        name: "Express",
+        Icon: SiExpress,
+        acronym: "Express.Js",
+        color: "#000000",
+      },
     ],
     database: [
       { name: "MySQL", Icon: SiMysql, acronym: "MySQL", color: "#4479A1" },
-      { name: "MongoDB", Icon: SiMongodb, acronym: "MongoDB", color: "#47A248" },
-      { name: "Oracle", Icon: SiOracle, acronym: "Oracle", color: "#F80000" }
+      {
+        name: "MongoDB",
+        Icon: SiMongodb,
+        acronym: "MongoDB",
+        color: "#47A248",
+      },
+      { name: "Oracle", Icon: SiOracle, acronym: "Oracle", color: "#F80000" },
     ],
     tools: [
       { name: "Git", Icon: SiGit, acronym: "Git", color: "#F05032" },
       { name: "Figma", Icon: SiFigma, acronym: "Figma", color: "#F24E1E" },
-      { name: "Docker", Icon: SiDocker, acronym: "Docker", color: "#2496ED" }
-    ]  
+      { name: "Docker", Icon: SiDocker, acronym: "Docker", color: "#2496ED" },
+    ],
   };
 
   return (
     <section className="skills-section" id="skills">
       <div className="container">
         <h1 className="section-title">MY STACK</h1>
-        
+
         <div className="stack-grid">
           {/* Frontend Column */}
           <div className="stack-category">
@@ -64,7 +104,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Frontend Tools Column */}
           <div className="stack-category">
             <h2 className="category-title">&nbsp;</h2>
@@ -74,7 +114,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Backend Column */}
           <div className="stack-category">
             <h2 className="category-title">BACKEND</h2>
@@ -84,7 +124,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Database Column */}
           <div className="stack-category">
             <h2 className="category-title">DATABASE</h2>
