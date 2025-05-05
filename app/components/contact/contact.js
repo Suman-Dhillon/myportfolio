@@ -1,9 +1,9 @@
 "use client";
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
-import { motion } from 'framer-motion';
-import './Contact.css';
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
+import { motion } from "framer-motion";
+import "./contact.css";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("movddqpe");
@@ -11,18 +11,20 @@ const Contact = () => {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="contact-header"
         >
           <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">Have a project in mind or want to collaborate? Let's talk!</p>
+          <p className="section-subtitle">
+            Have a project in mind or want to collaborate? Let&rsquo;s talk!
+          </p>
         </motion.div>
 
         <div className="contact-content">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -34,7 +36,9 @@ const Contact = () => {
               </div>
               <div className="info-text">
                 <h3>Email</h3>
-                <a href="mailto:sumandeepdkaur@gmail.com">sumandeepdkaur@gmail.com</a>
+                <a href="mailto:sumandeepdkaur@gmail.com">
+                  sumandeepdkaur@gmail.com
+                </a>
               </div>
             </div>
 
@@ -69,14 +73,14 @@ const Contact = () => {
             <div className="form-group">
               <input
                 id="name"
-                type="text" 
+                type="text"
                 name="name"
                 placeholder="Your Name"
                 required
               />
               <span className="input-highlight"></span>
-              <ValidationError 
-                prefix="Name" 
+              <ValidationError
+                prefix="Name"
                 field="name"
                 errors={state.errors}
                 className="validation-error"
@@ -92,8 +96,8 @@ const Contact = () => {
                 required
               />
               <span className="input-highlight"></span>
-              <ValidationError 
-                prefix="Email" 
+              <ValidationError
+                prefix="Email"
                 field="email"
                 errors={state.errors}
                 className="validation-error"
@@ -109,8 +113,8 @@ const Contact = () => {
                 required
               ></textarea>
               <span className="input-highlight"></span>
-              <ValidationError 
-                prefix="Message" 
+              <ValidationError
+                prefix="Message"
                 field="message"
                 errors={state.errors}
                 className="validation-error"
@@ -118,7 +122,7 @@ const Contact = () => {
             </div>
 
             {state.succeeded ? (
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="submit-message success"
@@ -133,7 +137,9 @@ const Contact = () => {
                 disabled={state.submitting}
                 className="submit-btn"
               >
-                {state.submitting ? 'Sending...' : (
+                {state.submitting ? (
+                  "Sending..."
+                ) : (
                   <>
                     <FiSend className="send-icon" />
                     Send Message
