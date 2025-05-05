@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
+import React from "react";
 import './home.css';
 
 const Home = () => {
@@ -37,7 +36,6 @@ const Home = () => {
                     
                     <div className="home-actions">
                         <a href="#contact" className="action-button hire-button">Hire Me</a>
-                        <a href="#projects" className="action-button search-button">Search</a>
                     </div>
                 </div>
             </section>

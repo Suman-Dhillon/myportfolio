@@ -1,13 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="transparent-nav">
       <div className="nav-logo">
-        <Link href="/">SK</Link>
+      <Link href="/">
+          <Image 
+            src="/logo-white.png" // Path to my logo in public folder
+            alt="Sumandeep Kaur Logo"
+            width={50}
+            height={50} 
+            className="logo-image"
+          />
+        </Link>
       </div>
 
       <div className="nav-links">
