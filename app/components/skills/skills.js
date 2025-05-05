@@ -6,7 +6,6 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiRedux,
   SiTailwindcss,
   SiBootstrap,
   SiNodedotjs,

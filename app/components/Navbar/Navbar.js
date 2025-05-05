@@ -12,8 +12,8 @@ const Navbar = () => {
           <Image 
             src="/logo-white.png" // Path to my logo in public folder
             alt="Sumandeep Kaur Logo"
-            width={50}
-            height={50} 
+            width={70}
+            height={70} 
             className="logo-image"
           />
         </Link>

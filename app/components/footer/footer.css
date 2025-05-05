@@ -162,11 +162,6 @@ footer {
     transition: transform 0.3s ease;
   }
   
-  /* If you want a colored logo on hover */
-    .logo-image:hover {
-    transform: scale(1.05);
-  }
-  
   /* For dark backgrounds, you might want: */
   .dark .logo-image {
     filter: none; /* Shows original logo colors */

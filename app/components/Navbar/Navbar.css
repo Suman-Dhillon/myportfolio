@@ -54,6 +54,20 @@
   letter-spacing: 1px;
 }
 
+.logo-image {
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.75);
+}
+
+/* Adjust nav-logo container if needed */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
 /* Navigation Links */
 .nav-links {
   display: flex;
@@ -88,14 +102,33 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .transparent-nav {
-    padding: 1rem;
-    flex-direction: column;
-  }
-  
   .nav-links {
     margin-top: 1rem;
     gap: 1rem;
+  }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .transparent-nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-logo {
+    width: 40px; /* Fixed width for mobile */
+    height: 40px; /* Fixed height for mobile */
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Optional: Different sizes for different breakpoints */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-logo {
+    width: 45px;
+    height: 45px;
   }
 }

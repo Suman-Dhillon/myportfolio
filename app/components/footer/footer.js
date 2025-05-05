@@ -60,7 +60,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="footer-bottom">
-          <p>&copy; 2025 Sumandieep Kaur. All rights reserved&rsquo;</p>
+          <p>&copy; 2025 Sumandeep Kaur. All rights reserved.</p>
 
           <motion.button
             whileHover={{ scale: 1.1 }}
